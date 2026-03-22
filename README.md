@@ -1,16 +1,53 @@
-# React + Vite
+### 2. For React Form Project (`react-forms`)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+````markdown
+# React Controlled Form
 
-Currently, two official plugins are available:
+A multi-field controlled form built with React + Vite, featuring real-time validation, loading state, error handling, and submitted data display.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Demo
 
-## React Compiler
+https://agmyathtun.github.io/react-forms/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- Controlled inputs (text, email, password, number)
+- Radio buttons (gender)
+- Select dropdown (country)
+- Checkbox (terms agreement)
+- Real-time validation & error messages
+- Password strength hint while typing
+- Submit button disabled when invalid
+- Loading state ("Submitting...") with fake delay
+- Success feedback + submitted data displayed on page
+- Form reset button
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+- React 18
+- Vite
+- useState for form state & errors
+- Controlled components
+- Form validation logic
+- Async submit with try/catch/finally
+- GitHub Pages deployment
+
+## Screenshots
+
+### Form with Validation Errors
+
+![Form Validation](screenshots/form-one.png)
+
+### Submitted Data Displays
+
+![Form Success](screenshots/form-two.png)
+
+## How to Run Locally
+
+```bash
+git clone https://github.com/Agmyathtun/react-forms.git
+cd react-forms
+npm install
+npm run dev
+```
+````
